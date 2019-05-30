@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView1"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imgDetail"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDetailName"
+                android:layout_centerHorizontal="true"
+                android:textSize="32dp"
+                android:layout_below="@id/imgDetail"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_below="@id/tvDetailName"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardView1">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvDetailReleaseDate"
+                        android:textSize="32dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvDetailVoteAverage"
+                        android:textSize="32dp"
+                        android:layout_below="@id/tvDetailReleaseDate"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvDetailPopularity"
+                        android:textSize="32dp"
+                        android:layout_below="@id/tvDetailVoteAverage"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvDetailOverview"
+                        android:textSize="32dp"
+                        android:layout_below="@id/tvDetailPopularity"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Back"
+                android:id="@+id/backButton"
+                android:layout_below="@id/cardView1"/>
+        </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
